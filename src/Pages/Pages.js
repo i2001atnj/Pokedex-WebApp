@@ -1,4 +1,2 @@
-import Homepage from './Homepage/Homepage'
-import PokemonPage from "./PokemonPage/PokemonPage";
-
-export { Homepage, PokemonPage }
+export { default as Homepage } from "./Homepage.jsx";
+export { default as PokemonPage } from "./PokemonPage.jsx";

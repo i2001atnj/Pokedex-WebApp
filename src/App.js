@@ -1,20 +1,20 @@
-import React from 'react'
-import { PokemonProvider } from './Context/PokemonContext'
-import { Routes, Route } from 'react-router-dom'
-import { Homepage, PokemonPage } from './Pages/Pages'
-import './Styles/App.css'
+import React from "react";
+import { PokemonProvider } from "./context/PokemonContext";
+import { Routes, Route } from "react-router-dom";
+import { Homepage, PokemonPage } from "./pages/pages";
+import "./styles/App.css";
 
 function App() {
   return (
-    <div className='App'>
+    <div className="App">
       <PokemonProvider>
         <Routes>
-          <Route path='/' element={ <Homepage/> } />
-          <Route path='pokemon/:id' element={ <PokemonPage/> } />
-        </Routes> 
+          <Route path="/" element={<Homepage />} />
+          <Route path="pokemon/:id" element={<PokemonPage />} />
+        </Routes>
       </PokemonProvider>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
